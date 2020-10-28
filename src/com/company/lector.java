@@ -1,4 +1,5 @@
 package com.company;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -12,12 +13,13 @@ public class lector {
     String line = "";
     String so = System.getProperty("os.name");
     int contCapital = 0, contLower = 0;
-    public void setDotfile(){
-        if(so.equals("Windows 10") || so.equals("Windows 8.1") || so.equals("Windows 8") || so.equals("Windows 7")){
+
+    public void setDotfile() {
+        if (so.equals("Windows 10") || so.equals("Windows 8.1") || so.equals("Windows 8") || so.equals("Windows 7")) {
             System.out.println("Enter the address of your txt file: ");
             file = rd.nextLine();
             //example: C:\\Users\\Save\\Desktop\\MiOracion.txt
-        }else {
+        } else {
             System.out.println("Enter the address of your txt file: ");
             file = rd.nextLine();
             //example: /home/save/Desktop/MiOracion.txt
@@ -25,14 +27,15 @@ public class lector {
         dotfile = new File(file);
     }
 
-    public void setConsole(){
+    public void setConsole() {
         try {
-            this.console= new Scanner(dotfile);
+            this.console = new Scanner(dotfile);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
     }
-    public void messageSentence(){
+
+    public void messageSentence() {
         color.colorCyan();
         System.out.println("The Sentence for file: ");
         color.colorReset();
@@ -43,7 +46,8 @@ public class lector {
         }
         color.colorReset();
     }
-    public void letter(){
+
+    public void letter() {
         for (int i = 0; i < line.length(); i++) {
             if (Character.isUpperCase(line.charAt(i))) {
                 contCapital++;
@@ -53,23 +57,27 @@ public class lector {
             }
         }
     }
+
     //Message:
-    public void messageInfo(){
+    public void messageInfo() {
         color.colorPurple();
-        System.out.println("The System operative is: "+so);
+        System.out.println("The System operative is: " + so);
         color.colorReset();
     }
-    public void messageLower(){
+
+    public void messageLower() {
         color.colorYellow();
-        System.out.println("The amount of lowercase letters are: "+contLower);
+        System.out.println("The amount of lowercase letters are: " + contLower);
         color.colorReset();
     }
-    public void messageUpper(){
+
+    public void messageUpper() {
         color.colorYellow();
-        System.out.println("The number of capital letters are: "+contCapital);
+        System.out.println("The number of capital letters are: " + contCapital);
         color.colorReset();
     }
-    public void todo(){
+
+    public void todo() {
         setDotfile();
         setConsole();
         messageSentence();
@@ -78,3 +86,12 @@ public class lector {
         messageUpper();
     }
 }
+/*
+ * Un menu de 4 opciones de las cuales son las siguientes:
+ * 1. Un programa que genera un numero random del 0-20 y que el usuario ingrese
+ * un numero y si estos son iguales que le muestre que gano, y sino pues Game Over xD
+ * 2. Crear Programa que me permitar crear un .txt y que guarde una oracion
+ * 3. Crear un programa de la cual este lee un .txt y que luego me mestre en que SO esta
+ *     tambien que me diga cuandas letras son mayusculas y minuscul
+ * 4. LISTAS ENLASADAS
+ * */

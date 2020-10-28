@@ -3,7 +3,7 @@ package com.company;
 public class random {
     colors color = new colors();
     int numberPerson;
-    int numberVar = (int) (Math.random() *20);
+    int numberVar = (int) (Math.random() * 20);
 
     //The algorithm for random number is: (int) (Math.random() *20)
 
@@ -19,15 +19,21 @@ public class random {
         return numberVar;
     }
 
-    public  void messageWin() {
+    public void messageWin() {
         color.colorGreen();
         System.out.println("The two numbers are the same, you won congratulations");
         color.colorReset();
     }
 
-    public  void messageGameOver() {
+    public void messageGameOver() {
         color.colorRed();
         System.out.println("The two numbers are different  sorry game over, oh no!");
+        color.colorReset();
+    }
+
+    public void messageNumber() {
+        color.colorYellow();
+        System.out.println("Enter the value of the number from 0-20 :");
         color.colorReset();
     }
 
@@ -38,4 +44,5 @@ public class random {
             messageGameOver();
         }
     }
+
 }

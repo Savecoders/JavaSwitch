@@ -1,25 +1,31 @@
 package com.company;
 
 public class colors {
-    public  void colorReset(){
+    public void colorReset() {
         System.out.print("\u001B[0m");
     }
-    public  void colorRed(){
+
+    public void colorRed() {
         System.out.print("\u001B[31m");
     }
-    public  void colorBlue(){
+
+    public void colorBlue() {
         System.out.print("\u001B[34m");
     }
-    public  void colorYellow(){
+
+    public void colorYellow() {
         System.out.print("\u001B[33m");
     }
-    public  void colorGreen(){
+
+    public void colorGreen() {
         System.out.print("\u001B[32m");
     }
-    public  void colorCyan(){
+
+    public void colorCyan() {
         System.out.print("\u001B[36m");
     }
-    public  void colorPurple(){
+
+    public void colorPurple() {
         System.out.print("\u001B[35m");
     }
 }

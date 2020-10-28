@@ -6,7 +6,6 @@ public class functional {
     colors color = new colors();
     Scanner rd = new Scanner(System.in);
     int size;
-    int[] array = new int[5];
 
     public void setSize(int n) {
         this.size = n;
@@ -16,8 +15,10 @@ public class functional {
         return size;
     }
 
+    int[] array = new int[size];
+
     public void setArray() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < size; i++) {
             array[i] = rd.nextInt();
         }
     }
@@ -66,6 +67,12 @@ public class functional {
     public void messageMinus() {
         color.colorCyan();
         System.out.println("The arrays minus and major");
+        color.colorReset();
+    }
+
+    public void messageSize() {
+        color.colorPurple();
+        System.out.println("Enter the size for array: ");
         color.colorReset();
     }
 }
