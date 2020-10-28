@@ -6,7 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
         // 4 options + default
-        functional f = new functional();
+
+       /* functional f = new functional();
         random num = new random();
         f.setSize(5);
         System.out.println(f.getSize());
@@ -19,6 +20,11 @@ public class Main {
         System.out.println(num.getNumberVar());
         num.setNumberPerson(4);
         num.messageGeneral();
+*/      lector txt = new lector();
+        txt.messageInfo();
+        txt.todo();
+
+
     }
 
 }
