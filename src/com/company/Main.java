@@ -1,5 +1,4 @@
 package com.company;
-
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -11,13 +10,13 @@ public class Main {
         Scanner rd = new Scanner(System.in);
         int option;
         do {
-            System.out.println("***********************************");
-            System.out.println("* 1. The program random victory   *");
-            System.out.println("* 2. The program Create .txt      *");
-            System.out.println("* 3. The program Lector .txt      *");
-            System.out.println("* 4. The program config arrays    *");
-            System.out.println("***********************************");
-            System.out.print("* Enter Selection: ");
+            System.out.println("***********************************************");
+            System.out.println("* 1. El programa de victoria aleatoria        *");
+            System.out.println("* 2. El programa de crear un .txt             *");
+            System.out.println("* 3. El programa de leer un .txt              *");
+            System.out.println("* 4. EL programa de de menor a mayor arreglo  *");
+            System.out.println("***********************************************");
+            System.out.print("* Entra la opcion que quieras:  ");
             option = rd.nextInt();
         } while (option > 4);
         switch (option) {
@@ -25,14 +24,14 @@ public class Main {
                 random num = new random();
                 num.messageNumber();
                 num.setNumberPerson(rd.nextInt());
-                System.out.println("The number random is: " + num.getNumberVar());
+                System.out.println("El numero aleatorio era: " + num.getNumberVar());
                 num.messageGeneral();
                 break;
             }
             case 2: {
                 create file = new create();
                 file.addNameAndRoot();
-                file.setMessage("Hello world!");
+                file.setMessage("Esta es la oración");
                 file.complement();
                 System.out.println(file.getRoot());
                 break;
@@ -47,14 +46,15 @@ public class Main {
                 functional f = new functional();
                 f.messageSize();
                 f.setSize(rd.nextInt());
-                System.out.println(f.getSize());
+                f.setArraySize();
                 f.message();
                 f.setArray();
-                System.out.println("Normal Arrays");
+                System.out.println("Arreglo de forma normal");
                 System.out.println(Arrays.toString(f.getArray()));
-                System.out.println("As a minor a mayor");
+                System.out.println("Arreglo de menor a mayor");
                 f.Minus();
-                System.out.println("from highest to lowest");
+                System.out.println(Arrays.toString(f.getArray()));
+                System.out.println("Arreglo de mayor a menor");
                 f.Mayor();
                 System.out.println(Arrays.toString(f.getArray()));
             }

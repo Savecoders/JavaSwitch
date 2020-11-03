@@ -49,7 +49,7 @@ public class create {
 
     public void Message() {
         color.colorRed();
-        System.out.println("Enter the path of where you want your file to be: ");
+        System.out.println("Ingresa la ubicacion donde quieres que este tu archivo y su nombre");
         color.colorReset();
     }
 

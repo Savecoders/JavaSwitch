@@ -21,19 +21,19 @@ public class random {
 
     public void messageWin() {
         color.colorGreen();
-        System.out.println("The two numbers are the same, you won congratulations");
+        System.out.println("Los dos números son iguales, ganaste felicitaciones");
         color.colorReset();
     }
 
     public void messageGameOver() {
         color.colorRed();
-        System.out.println("The two numbers are different  sorry game over, oh no!");
+        System.out.println("Los dos números son diferentes, lo siento, juego terminado.");
         color.colorReset();
     }
 
     public void messageNumber() {
         color.colorYellow();
-        System.out.println("Enter the value of the number from 0-20 :");
+        System.out.print("Ingresa un numero entre el 0 o el 20: ");
         color.colorReset();
     }
 

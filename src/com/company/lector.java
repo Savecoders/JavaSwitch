@@ -16,11 +16,11 @@ public class lector {
 
     public void setDotfile() {
         if (so.equals("Windows 10") || so.equals("Windows 8.1") || so.equals("Windows 8") || so.equals("Windows 7")) {
-            System.out.println("Enter the address of your txt file: ");
+            System.out.println("Ingresa la ubicación de tu archivo .txt");
             file = rd.nextLine();
             //example: C:\\Users\\Save\\Desktop\\MiOracion.txt
         } else {
-            System.out.println("Enter the address of your txt file: ");
+            System.out.println("Ingresa la ubicación de tu archivo .txt");
             file = rd.nextLine();
             //example: /home/save/Desktop/MiOracion.txt
         }
@@ -61,19 +61,19 @@ public class lector {
     //Message:
     public void messageInfo() {
         color.colorPurple();
-        System.out.println("The System operative is: " + so);
+        System.out.println("The sistema operativo que esta usando es: " + so);
         color.colorReset();
     }
 
     public void messageLower() {
         color.colorYellow();
-        System.out.println("The amount of lowercase letters are: " + contLower);
+        System.out.println("la cantidad de letras minusculas es: " + contLower);
         color.colorReset();
     }
 
     public void messageUpper() {
         color.colorYellow();
-        System.out.println("The number of capital letters are: " + contCapital);
+        System.out.println("La cantidad de letras mayusculas es:" + contCapital);
         color.colorReset();
     }
 

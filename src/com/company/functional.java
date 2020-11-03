@@ -6,6 +6,7 @@ public class functional {
     colors color = new colors();
     Scanner rd = new Scanner(System.in);
     int size;
+    int[] array ;
 
     public void setSize(int n) {
         this.size = n;
@@ -15,7 +16,9 @@ public class functional {
         return size;
     }
 
-    int[] array = new int[size];
+    public void setArraySize(){
+        this.array = new int[size];
+    }
 
     public void setArray() {
         for (int i = 0; i < size; i++) {
@@ -60,16 +63,20 @@ public class functional {
 
     public void messageDouble() {
         color.colorYellow();
-        System.out.println("The number is decimal ");
+        System.out.println("The numero es decimal");
         color.colorReset();
     }
 
     public void messageMinus() {
         color.colorCyan();
-        System.out.println("The arrays minus and major");
+        System.out.println("El arreglo esta de forma Ascendete");
         color.colorReset();
     }
-
+    public void messageMayus() {
+        color.colorCyan();
+        System.out.println("El arreglo esta de forma decendente");
+        color.colorReset();
+    }
     public void messageSize() {
         color.colorPurple();
         System.out.println("Enter the size for array: ");
