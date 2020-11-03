@@ -1,7 +1,9 @@
 # Programa Grupal de Programación
 ## Instalación
 Pruede descargar el codigo dando al boton:
-![](https://github.com/Savecoders/JavaSwitch/blob/master/img/download.png)
+
+![Imagen:](https://github.com/Savecoders/JavaSwitch/blob/master/img/download.png)
+
 ## Instalación con Git
 **Paso 1.** Crear una carpeta, ingresar a git bash y ejecutar.
 ```
