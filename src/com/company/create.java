@@ -11,7 +11,7 @@ public class create {
     colors color = new colors();
     String root;
     File dotFiles;
-    String Message;
+    String Mensage;
 
 
     public void setRoot(String r) {
@@ -19,7 +19,7 @@ public class create {
     }
 
     public void setMessage(String message) {
-        Message = message;
+        Mensage = message;
     }
 
 
@@ -34,7 +34,7 @@ public class create {
         }
         FileWriter Filewriter = new FileWriter(dotFiles);
         BufferedWriter BrosserWrite = new BufferedWriter(Filewriter);
-        BrosserWrite.write(Message);
+        BrosserWrite.write(Mensage);
         BrosserWrite.close();
     }
 
@@ -44,7 +44,7 @@ public class create {
     }
 
     public String getMessage() {
-        return Message;
+        return Mensage;
     }
 
     public void Message() {
