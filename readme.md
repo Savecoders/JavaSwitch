@@ -10,7 +10,16 @@ Pruede descargar el codigo dando al boton:
     git clone https://github.com/Savecoders/JavaSwitch.git
 ```
 **Paso 2.** Abrir su IDE o editor de codigo favorito.
-### Tenemos los siguientes programas
+# Programas
+
+### Los programas que quisimos usar fueron los siguientes.
+
+- **Primer Programa:** Victoria Aleatoria.
+- **Segundo Programa** Crear un archivo .txt
+- **Tercer Programa**  Leer un Archivo .txt
+- **Cuarto Programa**  Ordenar Arreglos
+- **Programa Default** Mostrar Figuras Geometricas
+
 
 ```java
 
