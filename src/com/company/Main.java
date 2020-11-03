@@ -1,6 +1,5 @@
 package com.company;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -49,17 +48,12 @@ public class Main {
                 f.setArraySize();
                 f.message();
                 f.setArray();
-                System.out.println("Arreglo de forma normal");
-                System.out.println(Arrays.toString(f.getArray()));
-                System.out.println("Arreglo de menor a mayor");
-                f.Minus();
-                System.out.println(Arrays.toString(f.getArray()));
-                System.out.println("Arreglo de mayor a menor");
-                f.Mayor();
-                System.out.println(Arrays.toString(f.getArray()));
+                f.init();
+                break;
             }
             default: {
-
+                animation animacion = new animation();
+                animacion.seleccionarFIgura();
             }
         }
     }

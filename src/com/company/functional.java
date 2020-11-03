@@ -1,5 +1,5 @@
 package com.company;
-
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class functional {
@@ -9,7 +9,7 @@ public class functional {
     int[] array ;
 
     public void setSize(int n) {
-        this.size = n;
+            this.size = n;
     }
 
     public int getSize() {
@@ -17,7 +17,11 @@ public class functional {
     }
 
     public void setArraySize(){
-        this.array = new int[size];
+        try {
+            this.array = new int[size];
+        }catch (Exception err){
+            System.out.println(err);
+        }
     }
 
     public void setArray() {
@@ -79,7 +83,18 @@ public class functional {
     }
     public void messageSize() {
         color.colorPurple();
-        System.out.println("Enter the size for array: ");
+        System.out.print("Ingrese el tamaño del arreglo: ");
         color.colorReset();
+    }
+    public void init(){
+        System.out.println("Arreglo de forma normal");
+        System.out.println(Arrays.toString(getArray()));
+        messageMinus();
+        Minus();
+        System.out.println(Arrays.toString(getArray()));
+        messageMayus();
+        Mayor();
+        System.out.println(Arrays.toString(getArray()));
+
     }
 }
