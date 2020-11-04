@@ -34,6 +34,9 @@ public class animation {
                 triangulo.triangulo();
                 break;
             }
+            default:{
+                System.out.println("Usted no a ingresado ninguna opción.");
+            }
         }
     }
 }

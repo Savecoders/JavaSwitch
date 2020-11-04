@@ -9,13 +9,13 @@ public class Main {
         Scanner rd = new Scanner(System.in);
         int option;
         do {
-            System.out.println("***********************************************");
-            System.out.println("* 1. El programa de victoria aleatoria        *");
-            System.out.println("* 2. El programa de crear un .txt             *");
-            System.out.println("* 3. El programa de leer un .txt              *");
-            System.out.println("* 4. EL programa de de menor a mayor arreglo  *");
-            System.out.println("***********************************************");
-            System.out.print("* Entra la opcion que quieras:  ");
+            System.out.println("**************************************************");
+            System.out.println("* 1. Programa numero random y Victoria Aleatoria *");
+            System.out.println("* 2. Programa Crear un archivo .txt              *");
+            System.out.println("* 3. Programa Leer un Archivo .txt               *");
+            System.out.println("* 4. Programa Ingrese y ordene Arreglos          *");
+            System.out.println("**************************************************");
+            System.out.print("* ELiga una opcion de la lista:  ");
             option = rd.nextInt();
         } while (option > 4);
         switch (option) {
