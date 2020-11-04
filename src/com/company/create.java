@@ -52,7 +52,11 @@ public class create {
         System.out.println("Ingresa la ubicacion donde quieres que este tu archivo y su nombre");
         color.colorReset();
     }
-
+    public void addSentence(){
+        color.colorPurple();
+        System.out.println("Ingrese la oración que quiera que guarde su archivo: ");
+        color.colorReset();
+    }
     public void addNameAndRoot() {
         Message();
         setRoot(rd.nextLine());

@@ -30,7 +30,8 @@ public class Main {
             case 2: {
                 create file = new create();
                 file.addNameAndRoot();
-                file.setMessage("Esta es la oración");
+                file.addSentence();
+                file.setMessage(rd.nextLine());
                 file.complement();
                 System.out.println(file.getRoot());
                 break;
@@ -52,6 +53,7 @@ public class Main {
                 break;
             }
             default: {
+                System.out.println();
                 animation animacion = new animation();
                 animacion.seleccionarFIgura();
             }

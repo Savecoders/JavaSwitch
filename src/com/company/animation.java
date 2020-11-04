@@ -20,13 +20,19 @@ public class animation {
         option = rd.nextInt();
         switch (option){
             case 1:{
+                cuadro.callMessage();
                 cuadro.cuadrado();
+                break;
             }
             case 2:{
+                rectangule.callMessage();
                 rectangule.rectangule();
+                break;
             }
             case 3:{
+                triangulo.messageY();
                 triangulo.triangulo();
+                break;
             }
         }
     }
